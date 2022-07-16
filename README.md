@@ -6,6 +6,7 @@ The theme introduces the following changes:
 * Show games as tiles rather than sliders/carousels
 * Sticky headers for game sections on scoll
 * Game search
+* Move play history to the top
 
 ## Demo
 
