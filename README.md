@@ -12,7 +12,7 @@ The theme introduces the following changes:
 ![alt text](pspdemo.gif)
 
 ## Installation
-**NOTE**: The installation is manual, and always be. While it is possible to create an installer, the manual installation allows you to see what is being changed.
+**NOTE**: The installation is manual, and always will be. While it is possible to create an installer, the manual installation allows you to see what is being changed.
 Review every change you make. There will never be an installer for this to not give anyone the opportunity to inject malicious content.
 
 ### Prerequisites
