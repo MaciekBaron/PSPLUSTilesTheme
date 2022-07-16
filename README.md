@@ -1,5 +1,5 @@
 # PSPLUSTilesTheme
-An unofficial custom theme for the Playstation Plus app with search. Inspired by [this gist](https://gist.github.com/aquelemiguel/170eadf2883d783b24236d249ab28fb9) by aquelemiguel.
+An unofficial custom theme for the Playstation Plus app with search. Inspired by [this gist](https://gist.github.com/aquelemiguel/170eadf2883d783b24236d249ab28fb9) by aquelemiguel. Tested with version 12.0.
 
 The theme introduces the following changes:
 * Remove sliders
