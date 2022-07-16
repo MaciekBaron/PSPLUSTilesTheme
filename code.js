@@ -54,6 +54,17 @@
         .PLAYHISTORY {
             order: -1;
         }
+        .games-list-tile[data-game-platform]:after {
+            position: absolute;
+            content: attr(data-game-platform);
+            left: .2em;
+            display: inline-block;
+            top: .2em;
+            font-size: 17px;
+            background: rgba(0,0,0,.75);
+            padding: .2em;
+            border-radius: 6px;
+        }
     `;
 
     const PSPP_WaitForCatalogListLoad = () => {
@@ -113,10 +124,11 @@
 
         return Promise.all(promises).then((data) => {
             data.forEach(({links}) => {
-                links.forEach(({name, id}) => {
+                links.forEach(({ name, id, playable_platform }) => {
                     const tiles = Array.from(document.querySelectorAll(`[data-game="${id}"]`));
                     tiles.forEach((tile) => {
                         tile.setAttribute('data-game-name', name);
+                        tile.setAttribute('data-game-platform', playable_platform.join('/'));
                     });
                 });
             });
