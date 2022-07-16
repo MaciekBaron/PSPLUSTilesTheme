@@ -7,6 +7,7 @@ The theme introduces the following changes:
 * Sticky headers for game sections on scroll
 * Game search with live result update
 * Move play history to the top
+* Display platfrom badge
 
 ## Demo
 
