@@ -3,10 +3,11 @@ A custom theme for the Playstation Plus app with search. Inspured by [this gist]
 
 The theme introduces the following changes:
 * Remove sliders
-* Show games as tiles
-* Sticky headers for game sections
-* Allow to search for games
+* Show games as tiles rather than sliders/carousels
+* Sticky headers for game sections on scoll
+* Game search
 
+## Demo
 
 ![alt text](pspdemo.gif)
 
@@ -40,4 +41,12 @@ Identify this line near the top of the file (should be line 3):
 var GKP = function () {
 ```
 
-Directly underneath it, copy and paste the code from [code.js](code.js)
+Directly underneath it, copy and paste the code from [code.js](code.js) and save the file.
+
+If you encounter permission errors, this is because you haven't opened the text editor as an administrator. Either reopen the application, or save a copy, and the move the copy to the original folder - Windows should then prompt you to approve the copy process.
+
+## Notice
+This repository does not contain any code owned by Sony Enterainment or its subsidiaries. Maintainers of this repository do not take any responsibility for any adverse effects of using the code changes. Use at your own risk.
+
+## License
+GNU Affero General Public License v3.0. See [LICENSE](LICENSE).
