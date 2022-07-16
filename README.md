@@ -4,8 +4,8 @@ An unofficial custom theme for the [Playstation Plus app](https://www.playstatio
 The theme introduces the following changes:
 * Remove sliders
 * Show games as tiles rather than sliders/carousels
-* Sticky headers for game sections on scoll
-* Game search
+* Sticky headers for game sections on scroll
+* Game search with live result update
 * Move play history to the top
 
 ## Demo
