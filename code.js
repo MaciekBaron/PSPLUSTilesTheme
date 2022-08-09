@@ -1,6 +1,4 @@
-    const STORE_URL = '/kamaji/api/pcnow/00_09_000/user/stores';
-
-    const newStyle = document.createElement('style');
+const newStyle = document.createElement('style');
     newStyle.innerText = `
         .scroll-arrow {
             display: none !important;
@@ -57,13 +55,9 @@
         .games-list-tile[data-game-platform]:after {
             position: absolute;
             content: attr(data-game-platform);
-            left: .2em;
+            bottom: 0;
+            left: 0;
             display: inline-block;
-            top: .2em;
-            font-size: 17px;
-            background: rgba(0,0,0,.75);
-            padding: .2em;
-            border-radius: 6px;
         }
     `;
 
@@ -138,12 +132,20 @@
     // Get the base url from the store url
     const PSPP_GetBaseUrl = () => {
         return new Promise((resolve) => {
-            fetch(STORE_URL)
-                .then((response) => response.json())
-                .then(({data}) => {
-                    resolve(data.base_url);
-                });
-            });
+            const newScript = document.createElement('script');
+            newScript.innerText = `
+              document.body.dataset.kamajiURL = GrandCentral.getConfig().kamajiHostUrl;
+            `; // Is there a better way ??
+            document.querySelector('body').appendChild(newScript);
+            setTimeout(() => {
+              const URL = document.querySelector('body').dataset.kamajiURL + 'user/stores';
+              fetch(URL)
+                  .then((response) => response.json())
+                  .then(({data}) => {
+                      resolve(data.base_url);
+                  });
+              });
+            }, 100);
     }
 
     // Use the base url to get the game lists
