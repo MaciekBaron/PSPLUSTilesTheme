@@ -122,7 +122,9 @@ const newStyle = document.createElement('style');
                     const tiles = Array.from(document.querySelectorAll(`[data-game="${id}"]`));
                     tiles.forEach((tile) => {
                         tile.setAttribute('data-game-name', name);
-                        tile.setAttribute('data-game-platform', playable_platform.join('/'));
+                        if (playable_platform) {
+                          tile.setAttribute('data-game-platform', playable_platform.join('/'));
+                        }
                     });
                 });
             });
@@ -135,7 +137,7 @@ const newStyle = document.createElement('style');
             const newScript = document.createElement('script');
             newScript.innerText = `
               document.body.dataset.kamajiURL = GrandCentral.getConfig().kamajiHostUrl;
-            `; // Is there a better way ??
+            `;
             document.querySelector('body').appendChild(newScript);
             setTimeout(() => {
               const URL = document.querySelector('body').dataset.kamajiURL + 'user/stores';
