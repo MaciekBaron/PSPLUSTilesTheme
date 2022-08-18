@@ -9,6 +9,8 @@ The theme introduces the following changes:
 * Move play history to the top
 * Display platform badge
 
+Tested on the UK locale.
+
 ## Demo
 
 ![alt text](pspdemo.gif)
