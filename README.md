@@ -50,7 +50,7 @@ Directly underneath it, copy and paste the code from [code.js](code.js) and save
 If you encounter permission errors, this is because you haven't opened the text editor as an administrator. Either reopen the application, or save a copy, and the move the copy to the original folder - Windows should then prompt you to approve the copy process.
 
 ## Notice
-This repository does not contain any code owned by Sony Interactive Entertainment or its subsidiaries.
+This repository does not contain any code owned by Sony Interactive Entertainment or its subsidiaries. All code is original.
 “PlayStation”, “PS5”, “PS4”, “PS3”, “PS2” are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
 All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners.
 Maintainers of this repository do not take any responsibility for any adverse effects of using the code changes. Use at your own risk.
